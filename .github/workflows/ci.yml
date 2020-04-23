@@ -13,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - if: contains(github.ref, 'fail')
-          exit 1
+        run: exit 1
