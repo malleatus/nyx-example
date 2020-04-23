@@ -1,0 +1,16 @@
+# https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      master
+
+jobs:
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - if: contains(github.ref, 'fail')
+          exit 1
