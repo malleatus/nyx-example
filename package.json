@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "repl": "ts-node -D 7017 -D 2393",
+    "test": "echo eh, prolly fine"
+  },
+  "devDependencies": {
+    "@malleatus/nyx": "malleatus/nyx#malleatus/merge-by-checks",
+    "execa": "^4.0.0",
+    "ts-node": "^8.9.0",
+    "typescript": "^3.8.3"
+  },
+  "volta": {
+    "node": "12.16.2",
+    "yarn": "1.22.4"
+  }
+}
