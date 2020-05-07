@@ -8,5 +8,6 @@ jobs:
     name: test
     runs-on: ubuntu-latest
     steps:
+      - run: echo ref -- ${{github.ref}}
       - if: contains(github.ref, 'fail')
         run: exit 1
