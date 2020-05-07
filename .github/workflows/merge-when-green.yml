@@ -6,9 +6,11 @@ on:
     # https://developer.github.com/v3/activity/events/types/#pullrequestreviewevent
   status:
     # https://developer.github.com/v3/activity/events/types/#statusevent
+  check_run:
+   types: [completed]
   check_suite:
     # https://help.github.com/en/actions/reference/events-that-trigger-workflows#webhook-events
-    types: ['completed']
+    types: [completed]
     
 
 jobs:
