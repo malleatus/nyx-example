@@ -2,11 +2,6 @@
 name: Test Merging PRs
 
 on:
-  pull_request_review:
-    # https://developer.github.com/v3/activity/events/types/#pullrequestreviewevent
-  status:
-    # https://developer.github.com/v3/activity/events/types/#statusevent
-  check_run:
   check_suite:   
 
 jobs:
